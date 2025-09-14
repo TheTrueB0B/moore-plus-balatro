@@ -1,5 +1,4 @@
 -- Weston Moore
--- test
 SMODS.Joker {
     key = "weston_moore",
     pos = { x = 0, y = 0 },
