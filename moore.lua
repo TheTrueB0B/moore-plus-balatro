@@ -1,4 +1,11 @@
 -- Weston Moore
+SMODS.Atlas{
+    key = 'westonjonkler',
+    path = 'westonjonkler.png',
+    px = 71,
+    py = 95
+}
+
 SMODS.Joker {
     key = "weston_moore",
     pos = { x = 0, y = 0 },
@@ -6,6 +13,7 @@ SMODS.Joker {
     blueprint_compat = true,
     cost = 7,
     discovered = true,
+    atlas = 'westonjonkler',
     config = { extra = { mult = 7 }, },
     loc_txt = {
         name = "Weston Moore",
