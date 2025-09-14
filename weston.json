@@ -1,0 +1,9 @@
+{
+    "id": "Moore+",
+    "name": "Moore+",
+    "author": ["Weston Moore & Co."],
+    "description": "Adds the Weston Moore Joker",
+    "prefix": "weston",
+    "main_file": "moore.lua",
+    "version": "1.0.0"
+}
