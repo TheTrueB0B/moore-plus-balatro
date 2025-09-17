@@ -7,32 +7,9 @@ SMODS.Atlas({
 	py = 32
 })
 
-
-
-SMODS.current_mod.config_tab = function()
-    return {n = G.UIT.ROOT, config = {r = 0.1, align = "cm", padding = 0.1, colour = G.C.BLACK, minw = 8, minh = 6}, nodes = {
-        {n = G.UIT.R, config = {align = "cl", padding = 0}, nodes = {
-            {n = G.UIT.C, config = { align = "c", padding = 0 }, nodes = {
-                { n = G.UIT.T, config = { text = "Weston Mode", scale = 0.35, colour = G.C.UI.TEXT_LIGHT }},
-            }},
-            {n = G.UIT.C, config = { align = "cl", padding = 0.05 }, nodes = {
-                create_toggle{ col = true, label = "", scale = 0.85, w = 0, shadow = true, ref_table = G.SETTINGS, ref_value = 'weston_mode' },
-                print("weston_mode")
-            }},
-        }},
-    }}
-end
-
--- Weston Moore
-if weston_mode then -- adds weston_mode functionality
-  weston_sprite = "westonmode.png"
-else
-  weston_sprite = "westonjonkler.png"
-end
-
 SMODS.Atlas{
     key = 'westonjonkler',
-    path = weston_sprite,
+    path = "westonjonkler.png",
     px = 71,
     py = 95
 }
@@ -58,9 +35,7 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play and context.other_card:get_id() == 7 then
-            return {
-                mult = card.ability.extra.mult
-            }
+            return { mult = card.ability.extra.mult }
         end
     end
 }
