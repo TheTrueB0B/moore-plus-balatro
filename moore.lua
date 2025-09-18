@@ -20,6 +20,7 @@ SMODS.Joker {
     rarity = 2,
     blueprint_compat = true,
     cost = 7,
+    pools = { ["Meme"] = true },
     discovered = true,
     atlas = 'westonjonkler',
     config = { extra = { mult = 7 }, },
